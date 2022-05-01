@@ -5,4 +5,4 @@
     android:layout_gravity="center"
     android:padding="4dp"
     android:textAlignment="center"
-    android:textColor="@color/white"></TextView>
+    android:textColor="@color/black"></TextView>

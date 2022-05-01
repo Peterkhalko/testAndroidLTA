@@ -5,23 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/black_shade_1"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
-
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/translate"
+        android:layout_gravity="center"
+        android:layout_marginEnd="4dp"/>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Language Translator"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:textColor="@color/yellow"
+        android:text="Language Translator App"
+        android:textColor="@color/black"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"
-        android:padding="4dp"
-        />
+        android:layout_marginStart="4dp"
+        android:textSize="23sp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,13 +53,15 @@
             android:layout_margin="3dp"
             android:padding="3dp"
             android:layout_gravity="center"
+            android:textColorHint="@color/black"
+
             />
         <ImageView
             android:layout_width="1dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:src="@drawable/ic__right"
-            app:tint="@color/white"
+            app:tint="@color/black"
             android:layout_gravity="center"
             />
 
@@ -58,6 +72,7 @@
             android:id="@+id/idToSpinner"
             android:layout_weight="1"
             android:gravity="center"
+            android:textColorHint="@color/black"
             android:padding="3dp"/>
 
     </LinearLayout>
@@ -70,7 +85,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="Source Text"
         android:padding="5dp"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/black"
         >
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -79,8 +94,8 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="textImeMultiLine|textMultiLine"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorSecondaryDark"
             android:textSize="14sp"
             />
     </com.google.android.material.textfield.TextInputLayout>
@@ -91,7 +106,7 @@
         android:layout_height="wrap_content"
         android:text="OR"
         android:textAllCaps="true"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:textAlignment="center"
@@ -114,7 +129,7 @@
         android:text="Say Something"
         android:textAlignment="center"
         android:gravity="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         android:textSize="15sp"
         />
@@ -128,6 +143,7 @@
         android:layout_marginEnd="20dp"
         android:text="Translate"
         android:textAllCaps="false"
+
         />
 
     <TextView
@@ -139,7 +155,7 @@
         android:text="Translated Text"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:gravity="center"
         />
